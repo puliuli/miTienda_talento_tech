@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El dragón curioso</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+        </style>
+    <link rel="shortcut icon" href="./media/iconoManoDragon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header>
+        <h2>tienda de ilustraciones</h2>
+        <nav class="menuNav">
+            <a href=""><img src="./media/header.png" alt="logotipo" width="100">
+            </a>
+
+            <ul>
+                <li> <a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="#formulario">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h3>Novedades</h3>
+            <p>Los mejores precios del mercado intergaláctico interdimensional</p>
+
+            <div class="tarjetas">
+
+                <div class="tarjeta">
+                    <img src="./media/espadaP.jpg" alt="img espada" width="200">
+                    <p>$1546032121UUC</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Debitis ducimus consectetur dicta pariatur accusamus veritatis quasi quod optio facere
+                        accusantium
+                        nihil voluptate cupiditate, similique tenetur, fugiat quae, ea amet iusto?</p>
+                    <a href=""></a>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="./media/bolaP.jpg" alt="img espada" width="200">
+                    <p>$1546032121UUC</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Debitis ducimus consectetur dicta pariatur accusamus veritatis quasi quod optio facere
+                        accusantium
+                        nihil voluptate cupiditate, similique tenetur, fugiat quae, ea amet iusto?</p>
+                    <a href=""></a>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="./media/guanteP.jpg" alt="img espada" width="200">
+                    <p>$1546032121UUC</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Debitis ducimus consectetur dicta pariatur accusamus veritatis quasi quod optio facere
+                        accusantium
+                        nihil voluptate cupiditate, similique tenetur, fugiat quae, ea amet iusto?</p>
+                    <a href=""></a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <br><br><br>
+
+        <section id="reseñas">
+            <h2>Reseñas</h2>
+            <p>Lo que opinan nuestros clientes</p>
+            <div class="reseñas">
+                <div class="reseña">
+                    <h2>Producto y opinion</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, officiis dolores ea, impedit
+                        cupiditate molestias vero voluptate similique provident commodi ullam. Deserunt quod ipsum
+                        praesentium ut rem tempore optio fugit?</p>
+                    <cite>Rosita Gutierrez</cite>
+                </div>
+                <div class="reseña">
+                    <h2>Producto y opinion</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, officiis dolores ea, impedit
+                        cupiditate molestias vero voluptate similique provident commodi ullam. Deserunt quod ipsum
+                        praesentium ut rem tempore optio fugit?</p>
+                    <cite>Rosita Gutierrez</cite>
+                </div>
+                <div class="reseña">
+                    <h2>Producto y opinion</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, officiis dolores ea, impedit
+                        cupiditate molestias vero voluptate similique provident commodi ullam. Deserunt quod ipsum
+                        praesentium ut rem tempore optio fugit?</p>
+                    <cite>Rosita Gutierrez</cite>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section>
+            <div class="video">
+                <iframe src="./media/nenaleyendo.mp4" width="500" height="500">Video publicitario</iframe>
+            </div>
+        </section>
+
+        <section id="formulario">
+            <h3>¿Tienes dudas?</h3>
+            <p>formulario de contacto</p>
+            <form action="https://formspree.io/f/mnnqpdon" method="post">
+                <p>Datos <strong>personales</strong></p>
+
+                <label for="nombreC">Nombre</label>
+                <input name="nombreC" id="nombreC" placeholder="Escribe tu nombre">
+                <br><br>
+
+                <p>Seleccione lo que corresponda
+                    <select name="Motivo">
+                        <option>Quiero contratarte</option>
+                        <option>Compra de mercancia</option>
+                        <option>Problema con envío</option>
+                        <option>Cursos o talleres que das</option>
+                        <option>Otro</option>
+                    </select>
+                </p>
+
+                <p>Raza (radio)
+                    <input type="radio" name="gender" value="Humanoide" checked>Humanoide
+                    <input type="radio" name="gender" value="Dimensional" checked>Dimensional
+                    <input type="radio" name="gender" value="Espiritual" checked>Espiritual
+                    <input type="radio" name="gender" value="Titán" checked>Titán
+                    <input type="radio" name="gender" value="Otro" checked>otro
+                    <br><br>
+                </p>
+
+                <p>Conocimiento previos: (checkbox)
+                    <input type="checkbox" name="Conocimiento" value="Magia ancestral">Magia ancestral
+                    <input type="checkbox" name="Conocimiento" value="Tecnología">Tecnología
+                    <input type="checkbox" name="Conocimiento" value="Dos armas">Dos armas <input type="checkbox"
+                        name="Conocimiento" value="Tecnología">Tecnología
+                    <input type="checkbox" name="Conocimiento" value="Holográfico">Holográfico
+
+                    <br><br>
+                </p>
+
+                <label for="email">Your Email</label>
+                <input name="Email" id="email" type="email">
+                <br><br>
+
+                <label for="terraC">Mundo de origen</label>
+                <input type="text" name="terraC" id="terraC" placeholder="Mundo de orígen" value="Terra">
+                <br><br>
+
+                <label for="consultaC"><strong>Consulta</strong></label>
+                <textarea name="consultaC" id="consultaC" cols="40" rows="10"></textarea>
+                <br><br>
+
+                <button type="submit">Submit</button> <button type="reset">Limpiar respuesta</button>
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>Síguienos en nuestras redes para más <strong>novedades</strong></p>
+            <ul>
+                <li> <img src="./media/iconoMail.png" alt="correo" width="50"> correo@correo.com</li>
+                <li> <img src="./media/iconoMapa.png" alt="ubicacion" width="50"> Ubicación</li>
+                <li> <img src="./media/iconoTel.png" alt="tel" width="50"> Whatsapp 78*8547/78 </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

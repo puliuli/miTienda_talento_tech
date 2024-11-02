@@ -1,0 +1,177 @@
+html {
+    background-color: #eedfd8;
+    padding: 0px;
+    margin: 100px;
+    box-sizing: border-box;
+    font-family: "Itim", cursive;
+
+}
+
+
+header {
+    background-image: url(../media/chef.jpg);
+    background-size: cover; /* Ajusta la imagen para cubrir todo el header */
+    background-position: center; /* Centra la imagen */
+    height: 800px; /* Ajusta la altura según lo necesites */
+
+}
+
+header h2 {
+    background-color: rgb(114, 180, 213);
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    font-size: 36px;
+
+}
+
+header a {
+    cursor: pointer;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+header nav {
+    width: 90%;
+    height: 40rem;
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-end; 
+    padding: 1rem 2rem ;
+}
+
+@media (width < 768px) {
+    header nav {
+        display: flex; 
+        gap: 0;
+
+    }
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    
+}
+
+header nav ul li {
+    list-style: none;
+    border-radius: 15%;
+    background-color: #e6cbb6;
+}
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.tarjeta {
+    padding: 3rem;
+    width: 300px;
+    border: 2px solid burlywood;
+    background-color: #deac71;
+}
+
+#reseñas {
+    background-color: #a98f7e;
+}
+
+.reseñas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+    height: 30rem;
+}
+
+
+@media only screen and (max-width: 1800px) {
+    .reseñas {
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .reseñas {
+        grid-template-columns: 1fr;
+        height: auto;
+
+    }
+}
+
+.reseña {
+    width: 25rem;
+    height: 25rem;
+    border: 1px solid rosybrown;
+    box-shadow: 10px 5px 10px #c85746;
+    background-color: antiquewhite;
+    display: grid; 
+    grid-template-rows: 5rem 1fr 5rem;
+    align-items: center;
+    border-radius: .5rem;
+    padding: .2rem;
+    margin: 3rem;
+}
+
+.video {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #4a596d;
+    padding: 4rem;
+
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eabe7f;
+    gap: rem;
+    padding: 20px;
+}
+
+footer {
+    background-color: #c85746;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+footer li {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+
+}
+
+
+
+.itim-regular {
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
