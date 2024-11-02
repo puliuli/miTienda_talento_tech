@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El dragón curioso</title>
+    <script src="https://kit.fontawesome.com/d4ef581ddf.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
         </style>
-    <link rel="shortcut icon" href="./media/iconoManoDragon.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="./media/iconoLapiz.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
@@ -16,11 +17,9 @@
     <header>
         <h2>tienda de ilustraciones</h2>
         <nav class="menuNav">
-            <a href=""><img src="./media/header.png" alt="logotipo" width="100">
-            </a>
-
+        
             <ul>
-                <li> <a href="index.html">Inicio</a></li>
+               <li><a href="index.html"><i class="fa-solid fa-house"></i>  Inicio</a></li>
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="#formulario">Contacto</a></li>
             </ul>
@@ -30,13 +29,13 @@
     <main>
         <section>
             <h3>Novedades</h3>
-            <p>Los mejores precios del mercado intergaláctico interdimensional</p>
+            <p class="linea">Posters, stickers, cuentos, agendas y muchas mas!</p>
 
             <div class="tarjetas">
 
                 <div class="tarjeta">
                     <img src="./media/espadaP.jpg" alt="img espada" width="200">
-                    <p>$1546032121UUC</p>
+                    <p>CURSOS Y TALLERES</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Debitis ducimus consectetur dicta pariatur accusamus veritatis quasi quod optio facere
                         accusantium
@@ -46,7 +45,7 @@
 
                 <div class="tarjeta">
                     <img src="./media/bolaP.jpg" alt="img espada" width="200">
-                    <p>$1546032121UUC</p>
+                    <p>POSTERS</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Debitis ducimus consectetur dicta pariatur accusamus veritatis quasi quod optio facere
                         accusantium
@@ -56,7 +55,7 @@
 
                 <div class="tarjeta">
                     <img src="./media/guanteP.jpg" alt="img espada" width="200">
-                    <p>$1546032121UUC</p>
+                    <p>PACK DE STICKERS</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Debitis ducimus consectetur dicta pariatur accusamus veritatis quasi quod optio facere
                         accusantium
@@ -70,9 +69,8 @@
 
         <br><br><br>
 
+        <h2>Reseñas</h2>
         <section id="reseñas">
-            <h2>Reseñas</h2>
-            <p>Lo que opinan nuestros clientes</p>
             <div class="reseñas">
                 <div class="reseña">
                     <h2>Producto y opinion</h2>
@@ -99,16 +97,16 @@
         </section>
 
 
-
+<div class="contenedorVideoFormulario">
         <section>
             <div class="video">
                 <iframe src="./media/nenaleyendo.mp4" width="500" height="500">Video publicitario</iframe>
             </div>
         </section>
 
-        <section id="formulario">
+        <section class="formulario">
             <h3>¿Tienes dudas?</h3>
-            <p>formulario de contacto</p>
+            <p class="linea"><strong> FORMULARIO DE CONTACTO</strong></p>
             <form action="https://formspree.io/f/mnnqpdon" method="post">
                 <p>Datos <strong>personales</strong></p>
 
@@ -126,21 +124,21 @@
                     </select>
                 </p>
 
-                <p>Raza (radio)
-                    <input type="radio" name="gender" value="Humanoide" checked>Humanoide
-                    <input type="radio" name="gender" value="Dimensional" checked>Dimensional
-                    <input type="radio" name="gender" value="Espiritual" checked>Espiritual
-                    <input type="radio" name="gender" value="Titán" checked>Titán
+                <p>Usted se presenta como
+                    <input type="radio" name="gender" value="Editor" checked>Editor
+                    <input type="radio" name="gender" value="Docente" checked>Docente
+                    <input type="radio" name="gender" value="Cliente" checked>Cliente
+                    <input type="radio" name="gender" value="Empresa" checked>Empresa
                     <input type="radio" name="gender" value="Otro" checked>otro
                     <br><br>
                 </p>
 
-                <p>Conocimiento previos: (checkbox)
-                    <input type="checkbox" name="Conocimiento" value="Magia ancestral">Magia ancestral
-                    <input type="checkbox" name="Conocimiento" value="Tecnología">Tecnología
-                    <input type="checkbox" name="Conocimiento" value="Dos armas">Dos armas <input type="checkbox"
-                        name="Conocimiento" value="Tecnología">Tecnología
-                    <input type="checkbox" name="Conocimiento" value="Holográfico">Holográfico
+                <p>Incluye
+                    <input type="checkbox" name="Conocimiento" value="propuestaVirtual">Propuesta virtual
+                    <input type="checkbox" name="Conocimiento" value="propuestaPresencial">Propuesta presencial
+                    <input type="checkbox" name="Conocimiento" value="encargoIndividual">Encargo individual
+                    <input type="checkbox" name="Conocimiento" value="encargoEstatal">Encargo estatal
+                    <input type="checkbox" name="Conocimiento" value="galeria">Galeria
 
                     <br><br>
                 </p>
@@ -149,29 +147,34 @@
                 <input name="Email" id="email" type="email">
                 <br><br>
 
-                <label for="terraC">Mundo de origen</label>
-                <input type="text" name="terraC" id="terraC" placeholder="Mundo de orígen" value="Terra">
+                <label for="terraC">Año</label>
+                <input type="text" name="terraC" id="terraC" placeholder="año" value="2024">
                 <br><br>
 
                 <label for="consultaC"><strong>Consulta</strong></label>
                 <textarea name="consultaC" id="consultaC" cols="40" rows="10"></textarea>
                 <br><br>
 
-                <button type="submit">Submit</button> <button type="reset">Limpiar respuesta</button>
+                <button type="submit" class="linea">SUBMIT</button> <button type="reset">Limpiar respuesta</button>
             </form>
 
         </section>
+
+    </div>
     </main>
     <footer>
         <div class="footer">
-            <p>Síguienos en nuestras redes para más <strong>novedades</strong></p>
+            <p>Síguienos en nuestras redes para más novedades</p>
             <ul>
-                <li> <img src="./media/iconoMail.png" alt="correo" width="50"> correo@correo.com</li>
-                <li> <img src="./media/iconoMapa.png" alt="ubicacion" width="50"> Ubicación</li>
-                <li> <img src="./media/iconoTel.png" alt="tel" width="50"> Whatsapp 78*8547/78 </li>
+                <li> <i class="fa-regular fa-envelope fa-2xl"> </i>  correo@correo.com</li>
+                <br>
+                <li>  <i class="fa-brands fa-instagram fa-2xl"> </i> Instagram</li>
+                <br>
+                <li> <i class="fa-brands fa-whatsapp fa-2xl"></i> Whatsapp 78*8547/78 </li>
             </ul>
         </div>
     </footer>
+    <div class="fin"> Legales 2024 - Todos los derechos reservados - Blablablabla</div>
 
 </body>
 
