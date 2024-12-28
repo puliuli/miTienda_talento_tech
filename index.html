@@ -11,6 +11,7 @@
         </style>
     <link rel="shortcut icon" href="./media/iconoLapiz.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/style.css">
+
 </head>
 
 <body>
@@ -19,55 +20,25 @@
         <nav class="menuNav">
         
             <ul>
-               <li><a href="index.html"><i class="fa-solid fa-house"></i>  Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="#formulario">Contacto</a></li>
+               <li><a href="#novedades"><i class="fa-solid fa-house"></i>  Novedades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#redes">Redes</a></li>
+
             </ul>
         </nav>
     </header>
 
     <main>
         <section>
-            <h3>Novedades</h3>
+            <h3 id="novedades">Novedades</h3>
             <p class="linea">Posters, stickers, cuentos, agendas y muchas mas!</p>
 
-            <div class="tarjetas">
-
-                <div class="tarjeta">
-                    <img src="./media/espadaP.jpg" alt="img espada" width="200">
-                    <p>CURSOS Y TALLERES</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Debitis ducimus consectetur dicta pariatur accusamus veritatis quasi quod optio facere
-                        accusantium
-                        nihil voluptate cupiditate, similique tenetur, fugiat quae, ea amet iusto?</p>
-                    <a href=""></a>
-                </div>
-
-                <div class="tarjeta">
-                    <img src="./media/bolaP.jpg" alt="img espada" width="200">
-                    <p>POSTERS</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Debitis ducimus consectetur dicta pariatur accusamus veritatis quasi quod optio facere
-                        accusantium
-                        nihil voluptate cupiditate, similique tenetur, fugiat quae, ea amet iusto?</p>
-                    <a href=""></a>
-                </div>
-
-                <div class="tarjeta">
-                    <img src="./media/guanteP.jpg" alt="img espada" width="200">
-                    <p>PACK DE STICKERS</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Debitis ducimus consectetur dicta pariatur accusamus veritatis quasi quod optio facere
-                        accusantium
-                        nihil voluptate cupiditate, similique tenetur, fugiat quae, ea amet iusto?</p>
-                    <a href=""></a>
-                </div>
-
+            <div id="contenedorTarjetas" class="tarjetas">
+            
             </div>
         </section>
 
 
-        <br><br><br>
 
         <h2>Reseñas</h2>
         <section id="reseñas">
@@ -97,6 +68,17 @@
         </section>
 
 
+        <section id="carrito">
+            <h2>Carrito</h2>
+            <ul>
+    
+            </ul>
+            <p id="totalCarrito">Total a pagar: $0</p>
+            <input id="boton-borrar" type="button" value="Borrar">
+            <input id="boton-pagar" type="button" value="Pagar">
+            <p id="mensajeCarrito"></p>
+        </section>
+
 <div class="contenedorVideoFormulario">
         <section>
             <div class="video">
@@ -104,7 +86,7 @@
             </div>
         </section>
 
-        <section class="formulario">
+        <section class="formulario" id = "contacto">
             <h3>¿Tienes dudas?</h3>
             <p class="linea"><strong> FORMULARIO DE CONTACTO</strong></p>
             <form action="https://formspree.io/f/mnnqpdon" method="post">
@@ -163,7 +145,7 @@
     </div>
     </main>
     <footer>
-        <div class="footer">
+        <div class="footer" id="redes" >
             <p>Síguienos en nuestras redes para más novedades</p>
             <ul>
                 <li> <i class="fa-regular fa-envelope fa-2xl"> </i>  correo@correo.com</li>
@@ -175,6 +157,7 @@
         </div>
     </footer>
     <div class="fin"> Legales 2024 - Todos los derechos reservados - Blablablabla</div>
+    <script src="javascript.js"></script>
 
 </body>
 

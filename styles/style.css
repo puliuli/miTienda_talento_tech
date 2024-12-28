@@ -79,12 +79,17 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
+
+}
+.tarjetas img {
+    width: 200px;    
 }
 
 .tarjeta {
-    padding: 3rem;
+    padding: 1rem;
     width: 300px;
+
     border: 2px solid burlywood;
     background-color: #deac71;
 }
@@ -102,21 +107,22 @@ p {
 
 #reseñas {
     background-color: #a98f7e;
-    padding: 2%;
+    padding: 25px;
 }
 
 .reseñas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
     gap: 1rem;
-    margin-top: 1rem;
+    margin: 1rem;
     height: 25rem;
 }
 
 
 @media only screen and (max-width: 1800px) {
     .reseñas {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         height: auto;
 
     }
@@ -144,6 +150,45 @@ p {
     margin: 3rem;
 }
 
+
+
+#boton-borrar {
+    padding: 1rem;
+    border-radius: 15%;
+    background-color: #e6cbb6;
+    margin: 10px;
+    font-family: "Itim", cursive;
+    font-size: large;
+
+}
+
+#boton-pagar {
+    padding: 1rem;
+    border-radius: 15%;
+    background-color: #e6cbb6;
+    margin: 10px;
+    font-family: "Itim", cursive;
+    font-size: large;
+}
+
+#boton-agregar{
+    padding: 1rem;
+    border-radius: 15%;
+    background-color: #e6cbb6;
+    margin: 10px;
+    font-family: "Itim", cursive;
+    font-size: medium;
+}
+
+#totalCarrito{
+
+}
+
+#carrito ul{
+    list-style: none;
+}
+
+
 .contenedorVideoFormulario {
     display: flex;
     flex-direction: row;
@@ -164,13 +209,13 @@ p {
     width: 50%;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     background-color: #eabe7f;
     padding: 3rem;
 }
 
+
 @media only screen and (max-width: 800px) {
-    #formulario {
+    .formulario {
         display: grid;
         grid-template-columns: 1fr;
         height: auto;
